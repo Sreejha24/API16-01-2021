@@ -1,0 +1,25 @@
+*****************OrderDetail15*********************************
+CREATE TABLE OrderDetail15(
+	OrderdetailId int Primary Key IDENTITY(1,1) NOT NULL,
+	ProductId int,
+	OrderId int ,
+	Quantity int ,
+	Price money
+) 
+
+*************************Order15******************************
+CREATE TABLE Order15(
+	OrderId int primary key IDENTITY(1,1) NOT NULL,
+	OrderAmount money,
+	OrderDate Date,
+	UserID varchar(max)
+	)
+
+************************Product15******************************
+CREATE TABLE Product15(
+	ProductId int Primary Key IDENTITY(1,1) NOT NULL,
+	ProductName nvarchar(max) ,
+	ProductQuantity int ,
+	ProductPrice money,
+	FileImage varchar(max)
+) 
